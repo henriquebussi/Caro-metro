@@ -6,7 +6,6 @@ function App(){
   return (
     <BrowserRouter>
       <MainRoutes/>
-      <h1 className=' text-white bg-red-400'>Opa, bão</h1>
     </BrowserRouter>
   );
 }
