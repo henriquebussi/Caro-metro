@@ -1,4 +1,5 @@
 import Topbar from "../components/Topbar"
+import './Homepage.css'
 
 function Homepage(){
     return(
