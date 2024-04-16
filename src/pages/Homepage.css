@@ -10,3 +10,31 @@
 .sigla, .lista{
     margin-left: 2.5rem;
 }
+
+body{
+    background-color: #E9E9E9;
+}
+
+
+
+.nomes{
+    background-color: #DDEFFF;
+    margin-left: 10vw;
+    margin-top: 1rem;
+    width: 80vw;
+    
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nomes img{
+    position: relative;
+    
+}
+
+
+.max{
+    margin: 0.5rem;
+    border: 2px solid black;
+}
