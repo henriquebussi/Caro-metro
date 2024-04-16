@@ -1,9 +1,8 @@
-import Topbar from "../components/Topbar"
+import './Userpage.css'
 
 function Userpage(){
     return(
         <div>
-            <Topbar/>
             <h1>OLA, usuario aq</h1>
         </div>
     )
