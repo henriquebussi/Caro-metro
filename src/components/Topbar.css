@@ -9,4 +9,5 @@
     display: flex;
     justify-content: space-around;
     background-color: aliceblue;
+    user-select: none;
 }
