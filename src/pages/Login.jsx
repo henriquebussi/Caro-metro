@@ -1,7 +1,8 @@
-import Topbar from "../components/Topbar"
+import React from 'react';
 import "./Login.css"
 
 function Login(){
+
     return(
         <div class="container" className=" bg-gradient-to-t from-blue-400 to-slate-50 h-screen items-center">
             <div className=" flex justify-center">
