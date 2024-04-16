@@ -12,7 +12,7 @@ function Login(){
             <div className=" flex items-center justify-center flex-col">
                 <input  type="text" placeholder="NOME" />
                 <input type="password" placeholder="SENHA" />
-                <button class ="entrar"> Entrar </button>
+                <button class ="entrar"> <a href="/home">Entrar  </a></button>
                 <button class="criar">Não tenho conta</button>
             </div>
         </div>
