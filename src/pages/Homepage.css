@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sigla{
+    margin-top: 2rem;
+}
+
+.sigla, .lista{
+    margin-left: 2.5rem;
+}
