@@ -3,11 +3,17 @@ import "./Login.css"
 
 function Login(){
 
+    const text = document.getElementById('text')
+    const password = document.getElementById('password')
+
     const handleClick = () => {
-        if(1 === 1){
+        if(text.value === 'admin'  && password.value === "admin123"){
             window.location.replace("/home");
+        } else {
+            window.alert("usuário ou senha incorretos")
+            window.alert("tente usar admin no username e admin123 em passowrd")
         }
-        
+
     };
 
     return(
@@ -21,8 +27,8 @@ function Login(){
                     <h1 className=" from-neutral-900 text-5xl mb-8" >LOGIN</h1>
                 </div>
                 <div className=" flex items-center justify-center flex-col mt-3">
-                    <input className=' mb-20 text-2xl' type="text" placeholder="NOME" />
-                    <input className=' mb-20 text-2xl'type="password" placeholder="SENHA" />
+                    <input className=' mb-20 text-2xl' type="text" placeholder="NOME"  id='text'/>
+                    <input className=' mb-20 text-2xl'type="password" placeholder="SENHA" id='password' />
                     <button className=' mb-14 entrar' onClick={handleClick} id="entrar" > ENTRAR </button>
                     <button class="criar">NÃO TENHO CONTA</button>
                 </div>
