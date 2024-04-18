@@ -57,3 +57,45 @@ input:focus{
     flex-direction: column;
     align-items: center;
 }
+
+.username{
+
+}
+
+
+@media (max-width: 640px){
+    .username, .password{
+        width: 20rem;
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+    .senaimg {
+        width: 20rem;
+    }
+
+}
+
+@media (max-width: 768px) and (min-width:641px){
+    .username, .password{
+        width: 30rem;
+        margin-bottom: 1px;
+        font-size: 12px;
+
+    }
+    .senaimg {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 880px) and (min-width: 769px){
+    .username, .password{
+        width: 35rem;
+        margin-bottom: 1px;
+        font-size: 12px;
+
+    }
+    .senaimg {
+        width: 30rem;
+    }
+
+}

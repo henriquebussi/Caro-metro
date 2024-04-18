@@ -37,4 +37,18 @@ body{
 .max{
     margin: 0.5rem;
     border: 2px solid black;
+    position: relative;
+    background-color: whitesmoke;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border-radius: 5px;
+}
+
+.max:hover{
+    transform: translate(0,-2.5px);
+    background-color: pink;
+    span{
+        font-weight: bold;
+    }
 }

@@ -21,12 +21,12 @@ function Login(){
             <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"></link>
             <div>
                 <div className="flex maxves">
-                    <img className="" src="src\image\logo-senai-azul2.png" alt="logo senai" width={500}/> <br />
+                    <img className="senaimg" src="src\image\logo-senai-azul2.png" alt="logo senai" width={500}/> <br />
                     <h1 className="from-neutral-900 text-5xl mb-8">LOGIN</h1>
                 </div>
                 <div className="flex items-center justify-center flex-col mt-3">
-                    <input className='mb-20 text-2xl' type="text" placeholder="NOME" value={username} onChange={(e) => setUsername(e.target.value)} />
-                    <input className='mb-20 text-2xl' type="password" placeholder="SENHA" value={password} onChange={(e) => setPassword(e.target.value)} />
+                    <input className='username mb-16 text-xl lg:h-18 lg:mb-20 lg:text-2xl' type="text" placeholder="NOME" value={username} onChange={(e) => setUsername(e.target.value)} />
+                    <input className='password mb-5 text-xl lg:h-18 lg:mb-20 lg:text-2xl' type="password" placeholder="SENHA" value={password} onChange={(e) => setPassword(e.target.value)} />
                     <button className='mb-14 entrar' onClick={handleClick} id="entrar"> ENTRAR </button>
                     <button className="criar">NÃO TENHO CONTA</button>
                 </div>
