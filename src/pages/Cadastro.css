@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-family: "Inria Sans", sans-serif;
+    user-select: none;
+}
+
+
+.entrar:hover{
+    transform: translate(0, -2.5px);
+    background-color: rgb(233, 91, 91);
+}
+
+.entrar{
+    transition-duration: 0.2s;
+    background-color: rgb(255, 122, 122);
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+}
+
+.criar{
+    transition-duration: 0.2s;
+    background-color: rgb(146, 163, 255);
+    width: 150px;
+    height: 30px;
+}
+
+
+
+.criar:hover{
+    transform: translate(0, -5px);
+    background-color: rgb(110, 131, 249);
+}
+
+input{
+    margin: 5px;
+    transition-duration: 0.3s;
+    width: 800px;
+    height: 70px;
+}
+
+input:focus{
+    background-color: aliceblue;
+    border: none;
+    
+}
+
+.container{
+    background-image: linear-gradient(from #000AFF to white);
+}
+
+.maxves{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.username{
+
+}
+
+
+@media (max-width: 640px){
+    .username, .password{
+        width: 20rem;
+        margin-bottom: 1px;
+        font-size: 12px;
+    }
+    .senaimg {
+        width: 20rem;
+    }
+
+}
+
+@media (max-width: 768px) and (min-width:641px){
+    .username, .password{
+        width: 30rem;
+        margin-bottom: 1px;
+        font-size: 12px;
+
+    }
+    .senaimg {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 880px) and (min-width: 769px){
+    .username, .password{
+        width: 35rem;
+        margin-bottom: 1px;
+        font-size: 12px;
+
+    }
+    .senaimg {
+        width: 30rem;
+    }
+
+}
