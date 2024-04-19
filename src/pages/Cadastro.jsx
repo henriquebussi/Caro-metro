@@ -34,7 +34,7 @@ function Cadastro(){
             <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"></link>
             <div>
                 <div className="flex maxves">
-                    <img className="senaimg" src="src\image\logo-senai-azul2.png" alt="logo senai" width={500}/> <br />
+                    <img className="senaimg" src="src\image\logo-senai-azul2.png" alt="logo senai" width={250}/> 
                     <h1 className="from-neutral-900 text-5xl mb-5">CADASTRO</h1>
                 </div>
                 <div className="flex items-center justify-center flex-col mt-3">
@@ -43,7 +43,7 @@ function Cadastro(){
                     <input className='username mb-16 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="number" placeholder="CPF" value={cpf} onChange={(e) => setCPF(e.target.value)}/>
                     <input className='password mb-5 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="password" placeholder="SENHA" value={password} onChange={(e) => setPassword(e.target.value)} />
                     <input className='username mb-16 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="password" placeholder="CONFIRME A SENHA" value={confirmar} onChange={(e) => setConfirmar(e.target.value)}/>
-                    <button className='mb-9 entrar' onClick={handleClick} id="entrar"> ENTRAR </button>
+                    <button className='mb-3 entrar' onClick={handleClick} id="entrar"> ENTRAR </button>
                     <button className="criar" onClick={cadastrar}>Já tenho uma conta</button>
                 </div>
             </div>

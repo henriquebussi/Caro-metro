@@ -9,12 +9,12 @@
 
 .entrar:hover{
     transform: translate(0, -2.5px);
-    background-color: rgb(233, 91, 91);
+    background-color: rgb(245, 68, 68);
 }
 
 .entrar{
     transition-duration: 0.2s;
-    background-color: rgb(255, 122, 122);
+    background-color: rgb(255, 95, 95);
     width: 200px;
     height: 60px;
     font-size: 30px;
@@ -56,11 +56,6 @@ input:focus{
     flex-direction: column;
     align-items: center;
 }
-
-.username{
-
-}
-
 
 @media (max-width: 640px){
     .username, .password{
