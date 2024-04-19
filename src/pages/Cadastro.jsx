@@ -24,7 +24,7 @@ function Cadastro(){
     };
 
     const cadastrar = () =>{
-        window.location.href = "/cadastro"
+        window.location.href = "/"
     }
 
     return(
