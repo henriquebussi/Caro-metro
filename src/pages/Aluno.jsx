@@ -1,4 +1,5 @@
 import React from 'react'
+import './Aluno.css'
 
 function Aluno() {
   return (
