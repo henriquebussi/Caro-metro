@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Aluno = () => {
+function Aluno() {
   return (
     <div>Aluno</div>
   )
 }
+
+export default Aluno
