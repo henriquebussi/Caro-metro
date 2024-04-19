@@ -17,12 +17,12 @@ body{
 
 
 
+
 .nomes{
     background-color: #DDEFFF;
-    margin-left: 10vw;
     margin-top: 1rem;
     width: 80vw;
-    
+    margin-left: 10vw ;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
