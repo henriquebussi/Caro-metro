@@ -7,12 +7,19 @@ import "./Cadastro.css"
 function Cadastro(){
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
+    const [confirmar, setConfirmar] = useState('');
+    
 
     const handleClick = () => {
-        if((username === 'henrique' && password === '123') || (username === 'juan' && password === '123')) {
-            window.location.href ="/home";
+        if(username != '' && password != '' && email != '' && confirmar != '') {
+            if(password == confirmar){
+                window.location.href ="/home";
+            }else{
+                alert("Senha e confirmar senha estão diferentes")
+            }
         } else {
-            alert("Usuário ou senha incorretos. Tente usar 'henrique' ou 'juan' no usuário e '123' na senha.");
+            alert("preencha todos os campos");
         }
     };
 
@@ -31,10 +38,10 @@ function Cadastro(){
                     <h1 className="from-neutral-900 text-5xl mb-5">CADASTRO</h1>
                 </div>
                 <div className="flex items-center justify-center flex-col mt-3">
-                    <input className='username mb-16 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="text" placeholder="NOME"/>
-                    <input className='username mb-16 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="text" placeholder="EMAIL"/>
+                    <input className='username mb-16 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="text" placeholder="NOME" value={username} onChange={(e) => setUsername(e.target.value)} />
+                    <input className='username mb-16 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="text" placeholder="EMAIL" value={email} onChange={(e) => setEmail(e.target.value)}/>
                     <input className='password mb-5 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="password" placeholder="SENHA" value={password} onChange={(e) => setPassword(e.target.value)} />
-                    <input className='username mb-16 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="text" placeholder="CONFIRME A SENHA"/>
+                    <input className='username mb-16 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="password" placeholder="CONFIRME A SENHA" value={confirmar} onChange={(e) => setConfirmar(e.target.value)}/>
                     <button className='mb-9 entrar' onClick={handleClick} id="entrar"> ENTRAR </button>
                     <button className="criar" onClick={cadastrar}>NÃO TENHO CONTA</button>
                 </div>
