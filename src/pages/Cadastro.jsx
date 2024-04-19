@@ -9,12 +9,12 @@ function Cadastro(){
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
     const [confirmar, setConfirmar] = useState('');
-    
+    const [cpf, setCPF] = useState('');
 
     const handleClick = () => {
-        if(username != '' && password != '' && email != '' && confirmar != '') {
+        if(username != '' && password != '' && email != '' && confirmar != '' && cpf != '') {
             if(password == confirmar){
-                window.location.href ="/home";
+                window.location.href ="/";
             }else{
                 alert("Senha e confirmar senha estão diferentes")
             }
@@ -40,10 +40,11 @@ function Cadastro(){
                 <div className="flex items-center justify-center flex-col mt-3">
                     <input className='username mb-16 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="text" placeholder="NOME" value={username} onChange={(e) => setUsername(e.target.value)} />
                     <input className='username mb-16 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="text" placeholder="EMAIL" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <input className='username mb-16 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="number" placeholder="CPF" value={cpf} onChange={(e) => setCPF(e.target.value)}/>
                     <input className='password mb-5 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="password" placeholder="SENHA" value={password} onChange={(e) => setPassword(e.target.value)} />
                     <input className='username mb-16 text-xl lg:h-18 lg:mb-5 lg:text-2xl' type="password" placeholder="CONFIRME A SENHA" value={confirmar} onChange={(e) => setConfirmar(e.target.value)}/>
                     <button className='mb-9 entrar' onClick={handleClick} id="entrar"> ENTRAR </button>
-                    <button className="criar" onClick={cadastrar}>NÃO TENHO CONTA</button>
+                    <button className="criar" onClick={cadastrar}>Já tenho uma conta</button>
                 </div>
             </div>
         </div>    
