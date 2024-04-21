@@ -1,9 +1,13 @@
 import React from 'react'
 import './Aluno.css'
+import Topbar from "../components/Topbar"
 
 function Aluno() {
   return (
-    <div>Aluno</div>
+
+    <div>
+      <Topbar/>
+    </div>
   )
 }
 
