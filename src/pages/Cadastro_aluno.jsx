@@ -8,3 +8,5 @@ function Cadastro_aluno() {
 }
 
 export default Cadastro_aluno
+
+// pagina onde cadastraremos os alunos

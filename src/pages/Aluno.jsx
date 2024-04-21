@@ -8,3 +8,5 @@ function Aluno() {
 }
 
 export default Aluno
+
+//pagina onde veremos aluno por aluno

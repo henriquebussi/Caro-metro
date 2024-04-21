@@ -52,3 +52,5 @@ function Cadastro(){
 }
 
 export default Cadastro
+
+// pagina onde cadastraremos os professores
