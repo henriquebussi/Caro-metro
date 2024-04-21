@@ -35,7 +35,11 @@ function Topbar() {
                     <a onClick={() => handleItemClick("IDEV1")}>IDEV1</a>
                     <a onClick={() => handleItemClick("IDEV2")}>IDEV2</a>
                     <a onClick={() => handleItemClick("IDEV3")}>IDEV3</a>
+                    <a onClick={() => handleItemClick("ILE-MEC1")}>ILE-MEC1</a>
+                    <a onClick={() => handleItemClick("ILE-MEC2")}>ILE-MEC2</a>
+                    <a onClick={() => handleItemClick("ILE-MEC3")}>ILE-MEC3</a>
                 </div>
+
             </div>
         </div>
     );
