@@ -18,7 +18,9 @@ function Cadastro_aluno() {
   };
 
   return (
+    
     <div>
+      <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
@@ -31,10 +33,11 @@ function Cadastro_aluno() {
             <h1 className="text-black text-5xl mb-12">CADASTRO</h1> <br />
           </div>
           <div className='flex justify-around'>
-            <div className='ml-12' id="rightside">
-              <input className="mb-10 w-[700px]" type="text" placeholder='NOME' />
-              <input className="mb-10 w-[700px]" type="text" placeholder='CPF' />
-              <input className="mb-10 w-[700px]" type="text" placeholder='EMAIL' />
+            <div className='ml-10' id="rightside">
+              <input className="mb-10 h-11 w-[700px]" type="text" placeholder='NOME' />
+              <input className="mb-10 h-11 w-[700px]" type="text" placeholder='CPF' />
+              <input className="mb-10 h-11 w-[700px]" type="text" placeholder='EMAIL' />
+              <input className="mb-10 h-11 w-[700px]" type="text" />
               <div className=' flex items-center flex-col'>
                 <input type="file" id='inpimg' className=' h-8 w-80' accept="image/png, image/gif, image/jpeg" onChange={ImgChange} />
                 {imgtoinp && <img src={imgtoinp} alt="preview" className=' w-32' />}
@@ -42,8 +45,8 @@ function Cadastro_aluno() {
               <img src="src\image\logo-senai-azul2.png" className="justify-start self-end w-40" alt="" />
             </div>
             <div className='' id="leftside">
-              <input className=" mb-10 w-[700px]" type="text" placeholder='NOME DO RESPONSAVEL' />
-              <input className=" mb-10 w-[700px]" type="text" placeholder='TELEFONE' />
+              <input className=" mb-10 h-11 w-[700px]" type="text" placeholder='NOME DO RESPONSAVEL' />
+              <input className=" mb-10 h-11 w-[700px]" type="text" placeholder='TELEFONE' />
               <textarea name="" id="" cols="105" rows="10" className=' justify-center w-[700px]' placeholder='COMETARIOS ADICIONAIS'></textarea>
             </div>
           </div>
