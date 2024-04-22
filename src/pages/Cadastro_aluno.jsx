@@ -37,7 +37,9 @@ function Cadastro_aluno() {
               <input className="mb-10 h-11 w-[700px]" type="text" placeholder='NOME' />
               <input className="mb-10 h-11 w-[700px]" type="text" placeholder='CPF' />
               <input className="mb-10 h-11 w-[700px]" type="text" placeholder='EMAIL' />
-              <input className="mb-10 h-11 w-[700px]" type="text" />
+              <div className="mb-10 h-11 w-[700px]" >
+                
+              </div>
               <div className=' flex items-center flex-col'>
                 <input type="file" id='inpimg' className=' h-8 w-80' accept="image/png, image/gif, image/jpeg" onChange={ImgChange} />
                 {imgtoinp && <img src={imgtoinp} alt="preview" className=' w-32' />}
