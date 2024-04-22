@@ -3,7 +3,8 @@ import './Topbar.css';
 
 function Topbar() {
     const [dropdownVisivel, setDropdownVisivel] = useState(false);
-    const [botaoTexto, setBotaoTexto] = useState("LISTA DE ALUNOS DO DESENVOLVIMENTO");
+    const [botaoTexto, setBotaoTexto] = useState("LISTA DE ALUNOS DO IDEV2");
+    const [turma, setTurma] = useState("IDEV2")
 
     function toggleDropdown() {
         setDropdownVisivel(!dropdownVisivel);
@@ -18,6 +19,7 @@ function Topbar() {
     function handleItemClick(nomeCurso) {
         setBotaoTexto(`LISTA DE ALUNOS DO ${nomeCurso}`);
         setDropdownVisivel(false);
+        setTurma(nomeCurso)
     }
 
     useEffect(() => {
@@ -45,9 +47,7 @@ function Topbar() {
         </div>
 
         <div className="sidebar">
-            sla oq <br />
-            sla oq <br />
-            sla oq <br />
+            <div className="turma">{turma}</div>
 
 
         </div>
