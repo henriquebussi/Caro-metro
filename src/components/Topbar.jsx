@@ -5,6 +5,7 @@ function Topbar() {
     const [dropdownVisivel, setDropdownVisivel] = useState(false);
     const [botaoTexto, setBotaoTexto] = useState("LISTA DE ALUNOS DO IDEV2");
     const [turma, setTurma] = useState("IDEV2")
+    const [curso, setCurso] = useState("desenvolvimento de sistemas")
 
     function toggleDropdown() {
         setDropdownVisivel(!dropdownVisivel);
@@ -31,7 +32,7 @@ function Topbar() {
 
     return (
         <>
-        <div className=" text-black navbar">
+        <div className=" text-black navbar1">
             <div className="dropdown">
                 <button onClick={toggleDropdown}>{botaoTexto}</button>
                 <div className={`alter ${dropdownVisivel ? 'show' : ''}`}>
@@ -48,7 +49,11 @@ function Topbar() {
 
         <div className="sidebar">
             <div className="turma">{turma}</div>
-
+        <div className="curso">
+        <span>CURSO</span>
+                <span>
+                {curso}
+            </span></div>
 
         </div>
         </>

@@ -18,3 +18,14 @@ span{
     cursor: auto;
     font-size: xx-large;
 }
+
+.navbar{
+    font-size: xx-large;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #DEDEDE;
+    user-select: none;
+    z-index: 2;
+    width: 100%;
+}

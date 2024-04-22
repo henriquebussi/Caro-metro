@@ -18,12 +18,14 @@ body{
 .hero{
     display: flex;
     justify-content: flex-end;
+    
 }
 
 
 .nomes{
+    
     background-color: #DDEFFF;
-    margin-top: 1rem;
+    margin-top: 5rem;
     width: 80vw;
     margin-left: 10vw ;
     flex-wrap: wrap;
@@ -64,4 +66,7 @@ body{
         user-select: none;
         font-size: 1.5rem;
     }
+}
+.topebar{
+    z-index: -1;
 }

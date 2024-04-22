@@ -9,7 +9,7 @@ function Homepage(){
 
     return(
         <>
-        <Topbar/>
+        <Topbar class="topebar"/>
         <div>
                  <main>
                     <div className="hero">

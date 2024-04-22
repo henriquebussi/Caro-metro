@@ -3,16 +3,17 @@
     padding: 0;
 }
 
-.navbar {
+.navbar1{
+    position: fixed; /* Alterado para fixo */
     font-size: xx-large;
     padding: 10px;
     display: flex;
     justify-content: flex-start;
     background-color: #DEDEDE;
     user-select: none;
-    button{
-        margin-left: 1rem;
-    }
+    z-index: 2;
+    width: 100%;
+     
 }
 
 .dropdown {
@@ -50,14 +51,14 @@
     background-color: #f1f1f1;
 }
 
-
 span{
     cursor: pointer;
-    
 }
 
 .sidebar{
-    width: fit-content;
+    margin-top: 4.25rem;
     position: fixed;
     background-color: #D0D0D0;
+    height: 100%;
+    
 }

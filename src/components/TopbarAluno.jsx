@@ -9,7 +9,7 @@ export const TopbarAluno = () => {
 
   return (
     <>
-        <div className="navbar">
+        <div class="navbar">
             <div className="container">
                 <img src="src\image\seta-esquerda.png" alt="arrow" onClick={VoltarTurma}/>
                 <span>MAX VERSTAPPEN</span>
