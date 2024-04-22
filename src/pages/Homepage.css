@@ -31,29 +31,31 @@ body{
 .nomes img{
     position: relative;
     width: 100%;
-    
-}
-
-
-.max{
-    margin: 0.5rem;
-    border: 2px solid black;
-    position: relative;
-    background-color: whitesmoke;
-    text-align: center;
-    cursor: pointer;
     transition-duration: 0.3s;
     border-radius: 5px;
-    span{
-        display: none;
-    }
+}
+
+.max img:hover{
+    transform: translate(0, -2.5px);
 }
 
 .max:hover{
-    transform: translate(0,-2.5px);
-    background-color: pink;
+   span{ 
+    color: black; 
+    cursor: pointer; 
+}
+}
+
+.max{
+    margin: 1rem;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.3s;
     span{
-        font-weight: bold;
-        display: flex;
+        color: #DDEFFF ;
+        user-select: none;
+        font-size: 1.5rem;
     }
 }

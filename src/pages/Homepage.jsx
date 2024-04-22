@@ -15,8 +15,56 @@ function Homepage(){
                     <div className="hero">
 
             <div className="nomes">
+            <div className="max">
+            <span onClick={PaginaAluno}>MAX VERSTAPPEN</span> 
+                <img src="src\image\Verstappen.jpg" alt="Max verstappen" onClick={PaginaAluno}/> 
+                </div>
             
-            
+                <div className="max" onClick={PaginaAluno}>
+            <span>MAX VERSTAPPEN</span> 
+                <img src="src\image\Verstappen.jpg" alt="Max verstappen"/> 
+                </div>
+                <div className="max" onClick={PaginaAluno}>
+            <span>MAX VERSTAPPEN</span> 
+                <img src="src\image\Verstappen.jpg" alt="Max verstappen"/> 
+                </div>
+                <div className="max" onClick={PaginaAluno}>
+            <span>MAX VERSTAPPEN</span> 
+                <img src="src\image\Verstappen.jpg" alt="Max verstappen"/> 
+                </div>
+
+                <div className="max" onClick={PaginaAluno}>
+            <span>MAX VERSTAPPEN</span> 
+                <img src="src\image\Verstappen.jpg" alt="Max verstappen"/> 
+                </div>
+                <div className="max" >
+            <span>MAX VERSTAPPEN</span> 
+                <img src="src\image\Verstappen.jpg" alt="Max verstappen"/> 
+                </div>
+                <div className="max" onClick={PaginaAluno}>
+            <span>MAX VERSTAPPEN</span> 
+                <img src="src\image\Verstappen.jpg" alt="Max verstappen"/> 
+                </div>
+                <div className="max" onClick={PaginaAluno}>
+            <span>MAX VERSTAPPEN</span> 
+                <img src="src\image\Verstappen.jpg" alt="Max verstappen"/> 
+                </div>
+                <div className="max" onClick={PaginaAluno}>
+            <span>MAX VERSTAPPEN</span> 
+                <img src="src\image\Verstappen.jpg" alt="Max verstappen"/> 
+                </div>
+                <div className="max" onClick={PaginaAluno}>
+            <span>MAX VERSTAPPEN</span> 
+                <img src="src\image\Verstappen.jpg" alt="Max verstappen"/> 
+                </div>
+                <div className="max" onClick={PaginaAluno}>
+            <span>MAX VERSTAPPEN</span> 
+                <img src="src\image\Verstappen.jpg" alt="Max verstappen"/> 
+                </div>
+                <div className="max" onClick={PaginaAluno}>
+            <span>MAX VERSTAPPEN</span> 
+                <img src="src\image\Verstappen.jpg" alt="Max verstappen"/> 
+                </div>
                 
                 
 
