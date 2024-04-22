@@ -7,6 +7,14 @@ function Topbar() {
     const [turma, setTurma] = useState("IDEV2")
     const [curso, setCurso] = useState("desenvolvimento de sistemas")
 
+
+    function Cadastrar() {
+        window.location.href = "/cadastro-aluno"
+    }
+    function voltar() {
+        window.location.href = "/"
+    }
+
     function toggleDropdown() {
         setDropdownVisivel(!dropdownVisivel);
     }
@@ -53,11 +61,20 @@ function Topbar() {
         </div>
 
         <div className="sidebar">
-            <div className="turma">{turma}</div>
-        <div className="curso">CURSO:</div>
+           <div><div className="turma">{turma}</div>
+        <div className="curso">CURSO:
         <div className="qualCurso">{curso}</div>
-
         </div>
+        </div> 
+        <div>
+        
+        <button class="button" onClick={Cadastrar}>Cadastre</button>
+        <div className="atualizacao">Lista atualizada em: <br /> 21/04/2024</div>
+        <img src="src\image\logo-senai-azul2.png" alt="Logo senai" onClick={voltar} class="logoSenai"/>
+        </div>
+        </div>
+
+        
         </>
     );
 }
