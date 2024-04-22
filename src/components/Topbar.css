@@ -13,7 +13,6 @@
     user-select: none;
     z-index: 2;
     width: 100%;
-     
 }
 
 .dropdown {
@@ -59,7 +58,7 @@ span{
     margin-top: 4.25rem;
     position: fixed;
     background-color: #D0D0D0;
-    height: 90%;
+    height: 92%;
     display: flex;
     flex-direction: column;
     text-align: center;
