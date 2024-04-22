@@ -5,7 +5,7 @@ import { TopbarAluno } from '../components/TopbarAluno'
 function Aluno() {
   return (
 
-    <div>
+    <div class="body">
       <TopbarAluno/>
 
       <main>
