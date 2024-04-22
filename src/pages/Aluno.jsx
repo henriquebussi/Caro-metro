@@ -7,6 +7,17 @@ function Aluno() {
 
     <div>
       <TopbarAluno/>
+
+      <main>
+
+      <div className="imageAluno">
+        <img src="" alt="" />
+      </div>
+      <div className="info">
+        <div className="container">
+        </div>
+      </div>
+      </main>
     </div>
   )
 }
