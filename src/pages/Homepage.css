@@ -33,10 +33,12 @@ body{
     width: 100%;
     transition-duration: 0.3s;
     border-radius: 5px;
+    border: 2px solid black;
 }
 
 .max img:hover{
     transform: translate(0, -2.5px);
+    border-color: #DDEFFF
 }
 
 .max:hover{
