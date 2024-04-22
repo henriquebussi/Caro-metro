@@ -3,11 +3,14 @@
     padding: 0;
 }
 
+body{
+}
+
 .maxPerfil{
     height: 37.5rem;
     width: 30rem;
     cursor: auto;
-}
+}   
 
 .centro{
     display: flex;
