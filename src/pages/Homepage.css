@@ -12,10 +12,14 @@
 }
 
 body{   
-    background-color: #E9E9E9;
+    background-color: #384A61;
 }
 
+.hero{
+    display: flex;
+    justify-content: flex-end;
 
+}
 
 
 .nomes{
@@ -26,6 +30,7 @@ body{
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
+    margin-right: 1rem;
 }
 
 .nomes img{

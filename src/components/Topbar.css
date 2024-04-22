@@ -7,11 +7,12 @@
     font-size: xx-large;
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     background-color: #DEDEDE;
     user-select: none;
-
-
+    button{
+        margin-left: 1rem;
+    }
 }
 
 .dropdown {

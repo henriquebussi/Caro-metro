@@ -15,7 +15,7 @@ function Homepage(){
                     <div className="hero">
 
             <div className="nomes">
-            <div className="max">
+            <div className="max" onClick={PaginaAluno}>
             <span onClick={PaginaAluno}>MAX VERSTAPPEN</span> 
                 <img src="src\image\Verstappen.jpg" alt="Max verstappen" onClick={PaginaAluno}/> 
                 </div>

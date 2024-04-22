@@ -28,7 +28,8 @@ function Topbar() {
     }, []);
 
     return (
-        <div className="bg-gray-500 text-white navbar">
+        <>
+        <div className=" text-black navbar">
             <div className="dropdown">
                 <button onClick={toggleDropdown}>{botaoTexto}</button>
                 <div className={`alter ${dropdownVisivel ? 'show' : ''}`}>
@@ -42,6 +43,15 @@ function Topbar() {
 
             </div>
         </div>
+
+        <div className="sidebar">
+            sla oq <br />
+            sla oq <br />
+            sla oq <br />
+
+
+        </div>
+        </>
     );
 }
 
