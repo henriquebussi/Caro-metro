@@ -30,9 +30,9 @@ function Topbar() {
         setDropdownVisivel(false);
         setTurma(nomeCurso)
         if (nomeCurso != "IDEV1" && nomeCurso != "IDEV2" && nomeCurso != "IDEV3"){
-            setCurso("eletro-eletronica/mecânica")
+            setCurso("ELETRO-ELETRONICA/MECÂNICA")
         } else{
-            setCurso("desenvolvimento de sistemas")
+            setCurso("DESENVOLVIMENTO DE SISTEMAS")
         }
     }
 
