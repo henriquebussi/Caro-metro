@@ -1,12 +1,12 @@
 import React from 'react'
 import './Aluno.css'
-import Topbar from "../components/Topbar"
+import { TopbarAluno } from '../components/TopbarAluno'
 
 function Aluno() {
   return (
 
     <div>
-      <Topbar/>
+      <TopbarAluno/>
     </div>
   )
 }

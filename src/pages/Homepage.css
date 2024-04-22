@@ -30,6 +30,7 @@ body{
 
 .nomes img{
     position: relative;
+    width: 100%;
     
 }
 
@@ -43,6 +44,9 @@ body{
     cursor: pointer;
     transition-duration: 0.3s;
     border-radius: 5px;
+    span{
+        display: none;
+    }
 }
 
 .max:hover{
@@ -50,5 +54,6 @@ body{
     background-color: pink;
     span{
         font-weight: bold;
+        display: flex;
     }
 }
