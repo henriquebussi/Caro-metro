@@ -21,6 +21,11 @@ function Topbar() {
         setBotaoTexto(`LISTA DE ALUNOS DO ${nomeCurso}`);
         setDropdownVisivel(false);
         setTurma(nomeCurso)
+        if (nomeCurso != "IDEV1" && nomeCurso != "IDEV2" && nomeCurso != "IDEV3"){
+            setCurso("eletro-eletronica/mecânica")
+        } else{
+            setCurso("desenvolvimento de sistemas")
+        }
     }
 
     useEffect(() => {
@@ -49,11 +54,8 @@ function Topbar() {
 
         <div className="sidebar">
             <div className="turma">{turma}</div>
-        <div className="curso">
-        <span>CURSO</span>
-                <span>
-                {curso}
-            </span></div>
+        <div className="curso">CURSO:</div>
+        <div className="qualCurso">{curso}</div>
 
         </div>
         </>
