@@ -21,6 +21,7 @@ function Aluno() {
             <span className="turma2 informacao">Turma: IDEV2 né vida</span>
             <span className="responsavel informacao">Nome do responsável: Sophie-Marie Kumpen</span>
             <span className="telefone informacao">Número: #1 lugar </span>
+            <span className="ocorrencias informacao">Ocorrencias: 2 por exesso de velocidade </span>
             <span className="comentarios informacao">Comentários:enquanto tu ta indo ele ta vortano </span>
         </div>
       </div>
