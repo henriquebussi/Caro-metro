@@ -69,8 +69,10 @@ function Topbar() {
         <div>
         
         <button class="button" onClick={Cadastrar}>Cadastre</button>
+        <div className=' flex items-center flex-col'>
         <div className="atualizacao">Lista atualizada em: <br /> 21/04/2024</div>
-        <img src="src\image\logo-senai-azul2.png" alt="Logo senai" onClick={voltar} class="logoSenai"/>
+        <img src="src\image\logo-senai-azul2.png" alt="Logo senai" onClick={voltar} class="logoSenai mb-6"/>
+        </div>
         </div>
         </div>
 
