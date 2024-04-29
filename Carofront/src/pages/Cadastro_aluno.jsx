@@ -53,7 +53,7 @@ function Cadastro_aluno() {
             <div className=' flex flex-col' id="rightside">
               <input className=" mb-10 h-11 input" type="text" placeholder='NOME DO RESPONSAVEL' />
               <input className=" mb-10 h-11 input" type="text" placeholder='TELEFONE' />
-              <textarea name="" id="" cols="105" rows="10" className=' justify-center input' placeholder='COMETARIOS ADICIONAIS'></textarea> <br />
+              <textarea name="" id="" cols="105" rows="10" className=' justify-center input' placeholder='COMETARIOS ADICIONAIS' class="textarea"></textarea> <br />
               <div className=' flex justify-center'>
               <button className=' cadastro' onClick={cadastro}>CADASTRE</button>
               </div>
