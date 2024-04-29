@@ -41,19 +41,19 @@ function Cadastro_aluno() {
               <input className="mb-10 h-11 input " type="text" placeholder='NOME' />
               <input className="mb-10 h-11 input" type="text" placeholder='CPF' />
               <input className="mb-10 h-11 input" type="text" placeholder='EMAIL' />
-              <div className="mb-10 h-11 input" >
+              <div className="h-5 input" >
                 
               </div>
               <div className=' flex items-center flex-col'>
                 <label htmlFor="inpimg" id='labelimg' className=' mb-3'>IMPORTE A FOTO</label>
                 <input type="file" id='inpimg' className=' h-8 w-80' accept="image/png, image/gif, image/jpeg" onChange={ImgChange} />
-                {imgtoinp && <img src={imgtoinp} alt="preview" className=' w-32' />}
+                {imgtoinp && <img src={imgtoinp} alt="preview" className=' w-16' />}
               </div>
             </div>
             <div className=' flex flex-col' id="rightside">
               <input className=" mb-10 h-11 input" type="text" placeholder='NOME DO RESPONSAVEL' />
               <input className=" mb-10 h-11 input" type="text" placeholder='TELEFONE' />
-              <textarea name="" id="" cols="105" rows="10" className=' justify-center input' placeholder='COMETARIOS ADICIONAIS' class="textarea"></textarea> <br />
+              <textarea name="" id=""  rows="10" className=' justify-center input' placeholder='COMETARIOS ADICIONAIS' class="textarea"></textarea> <br />
               <div className=' flex justify-center'>
               <button className=' cadastro' onClick={cadastro}>CADASTRE</button>
               </div>

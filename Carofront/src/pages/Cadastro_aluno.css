@@ -16,10 +16,9 @@ input[type="file"]{
 
 }
 
-#inpimg{
-
+.textarea{
+  height : 5rem;
 }
-
 #labelimg{
   display: inline-block;
   border: 1px solid #ccc;
@@ -87,6 +86,7 @@ input[type="file"]{
   .input{
     width: 25rem;
   }
+  
 }
 
 
