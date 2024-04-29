@@ -2,3 +2,89 @@
   margin: 0;
   padding: 0;
 }
+
+.cadastro{
+  width: 150px;
+  height: 50px; 
+  font-size: 30px;
+  background-color: #92A3FF;
+}
+
+
+input[type="file"]{
+  display: none;
+
+}
+
+#inpimg{
+
+}
+
+#labelimg{
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #FF7A7A;
+
+}
+
+.input{
+  width: 500px;
+}
+
+@media (max-width: 640px){
+  .input{
+      width: 15rem;
+      margin-bottom: 1px;
+      font-size: 20px;
+  }
+  .senaimg {
+      width: 20rem;
+  }
+
+  .cadastro{
+    margin-top: 50px;
+    width: 250px;
+    height: 75px;
+    font-size: 50px; 
+  
+  }
+
+}
+
+@media (max-width: 768px) and (min-width:641px){
+  .input{
+      width: 15rem;
+      margin-bottom: 1px;
+      font-size: 12px;
+
+  }
+  .senaimg {
+      width: 30rem;
+  }
+}
+
+@media (max-width: 880px) and (min-width: 769px){
+  .input{
+      width: 20rem;
+      margin-bottom: 1px;
+      font-size: 12px;
+
+  }
+  .senaimg {
+      width: 30rem;
+  }
+
+
+  .seta{
+    width: 2rem;
+  }
+
+}
+
+@media (max-width: 1000px) and (min-width: 881px){
+  .input{
+    width: 25rem;
+  }
+}
