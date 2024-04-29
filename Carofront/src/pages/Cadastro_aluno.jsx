@@ -60,7 +60,7 @@ function Cadastro_aluno() {
         </div>
         </div>
           </div>
-          <img src="src\image\logo-senai-azul2.png" className=" justify-end flex-col self-start w-40 ml-9 " alt="" />
+          <img src="src\image\logo-senai-azul2.png" className=" justify-end flex-col self-start w-40 ml-9 image" alt="" />
 
       </div>
     </div>
