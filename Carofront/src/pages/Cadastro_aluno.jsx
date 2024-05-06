@@ -34,7 +34,7 @@ function Cadastro_aluno() {
         <img className="ml-4 seta"  src="src\image\seta-esquerda.png" alt="arrow" onClick={VoltarTurma} />
         <div className='flex flex-col'>
           <div className='justify-center'>
-            <h1 className="text-black text-5xl mb-12 text-center">CADASTRO</h1> <br />
+            <h1 className="text-black text-5xl md:mb-10 sm:mb-5 text-center">CADASTRO</h1> <br />
           </div>
           <div className='flex justify-around'>
             <div className=' flex flex-col' id="leftside">
@@ -45,7 +45,7 @@ function Cadastro_aluno() {
                 
               </div>
               <div className=' flex items-center flex-col'>
-                <label htmlFor="inpimg" id='labelimg' className=' mb-3'>IMPORTE A FOTO</label>
+                <label htmlFor="inpimg" id='labelimg' className='importe'>IMPORTE A FOTO</label>
                 <input type="file" id='inpimg' className=' h-8 w-80' accept="image/png, image/gif, image/jpeg" onChange={ImgChange} />
                 {imgtoinp && <img src={imgtoinp} alt="preview" className=' w-32' />}
               </div>
@@ -60,7 +60,7 @@ function Cadastro_aluno() {
         </div>
         </div>
           </div>
-          <img src="src\image\logo-senai-azul2.png" className=" justify-end flex-col self-start w-40 ml-9 image" alt="" />
+          <img src="src\image\logo-senai-azul2.png" className=" justify-end flex-col self-start w-24 sm:w-40 ml-9 image" alt="" />
 
       </div>
     </div>

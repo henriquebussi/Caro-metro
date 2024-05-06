@@ -29,15 +29,39 @@ input[type="file"]{
 
 }
 
+.importe{
+  margin-bottom: 0.75rem;
+}
+
 .input{
   width: 500px;
 }
 
-@media (max-width: 640px){
+@media (max-width: 320px){
+  .input{
+    width: 130px;
+    height: 60px;
+  }
+  .seta{
+    width: 25px;
+  }
+  .image{
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 321px){
+  .input{
+    width: 130px;
+    height: 60px;  }
+}
+
+@media (max-width: 640px) and (min-width:500px){
   .input{
       width: 15rem;
       margin-bottom: 1px;
       font-size: 20px;
+      height: 5rem;
   }
   .senaimg {
       width: 20rem;
@@ -45,9 +69,9 @@ input[type="file"]{
 
   .cadastro{
     margin-top: 50px;
-    width: 250px;
-    height: 75px;
-    font-size: 50px; 
+    width: 100px;
+    height: 40px;
+    font-size: 20px; 
   
   }
 
@@ -60,8 +84,11 @@ input[type="file"]{
       font-size: 12px;
 
   }
-  .img {
-      width: 30rem;
+  .image {
+      width: 1rem;
+  }
+  .importe{
+    margin-bottom: 5px;
   }
 }
 
@@ -70,12 +97,11 @@ input[type="file"]{
       width: 20rem;
       margin-bottom: 1px;
       font-size: 12px;
-
   }
+
   .senaimg {
       width: 30rem;
   }
-
 
   .seta{
     width: 2rem;
