@@ -4,8 +4,8 @@ import './Cadastro_aluno.css';
 function Cadastro_aluno() {
   const [imgtoinp, setImgtoinp] = useState('');
   const [inptoimg, setInptoimg] = useState('');
-  const campoObrigatorio = document.getElementById('obrigatorio')
-   //declarar as variaveis
+  const [campoObrigatorio, setObrigatorio] = useState('');
+    //declarar as variaveis
 
   function VoltarTurma() {
     window.location.href = "/home";
@@ -19,7 +19,7 @@ function Cadastro_aluno() {
   };
 
   function cadastro(){
-    if (campoObrigatorio.value != '') {
+    if (campoObrigatorio != '') {
       window.alert("usuario cadastrado com sucesso")
     window.location.href = "/home"
   } else{
@@ -44,9 +44,9 @@ function Cadastro_aluno() {
           </div>
           <div className='flex justify-around'>
             <div className=' flex flex-col' id="leftside">
-              <input className="mb-10 h-11 input " type="text" placeholder='NOME' id='obrigatorio' />
-              <input className="mb-10 h-11 input" type="number" placeholder='CPF' id='obrigatorio number' />
-              <input className="mb-10 h-11 input" type="email" placeholder='EMAIL' id='obrigatorio' />
+              <input className="mb-10 h-11 input " type="text" placeholder='NOME' id='obrigatorio'value={campoObrigatorio} onChange={(e) => setObrigatorio(e.target.value)} />
+              <input className="mb-10 h-11 input" type="number" placeholder='CPF' id='obrigatorio number' value={campoObrigatorio} onChange={(e) => setObrigatorio(e.target.value)}/>
+              <input className="mb-10 h-11 input" type="email" placeholder='EMAIL' id='obrigatorio' value={campoObrigatorio} onChange={(e) => setObrigatorio(e.target.value)} />
               <div className="h-5 input" >
                 
               </div>
@@ -57,8 +57,8 @@ function Cadastro_aluno() {
               </div>
             </div>
             <div className=' flex flex-col' id="rightside">
-              <input className=" mb-10 h-11 input" type="text" placeholder='NOME DO RESPONSAVEL' id='obrigatorio'/>
-              <input className=" mb-10 h-11 input" type="number" placeholder='TELEFONE' id='obrigatorio number' />
+              <input className=" mb-10 h-11 input" type="text" placeholder='NOME DO RESPONSAVEL' id='obrigatorio' value={campoObrigatorio} onChange={(e) => setObrigatorio(e.target.value)}/>
+              <input className=" mb-10 h-11 input" type="number" placeholder='TELEFONE' id='obrigatorio 'value={campoObrigatorio} onChange={(e) => setObrigatorio(e.target.value)} />
               <textarea name="" id=""  rows="10" className=' justify-center input' placeholder='COMETARIOS ADICIONAIS' class="textarea"></textarea> <br />
               <div className=' flex justify-center'>
               <button className=' cadastro' onClick={cadastro}>CADASTRE</button>
