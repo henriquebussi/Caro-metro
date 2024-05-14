@@ -41,6 +41,19 @@ function Cadastro_aluno() {
               <input className="mb-10 h-11 input " type="text" placeholder='NOME' />
               <input className="mb-10 h-11 input" type="text" placeholder='CPF' />
               <input className="mb-10 h-11 input" type="text" placeholder='EMAIL' />
+              <div id='dropdwon'>
+                <label for="cars">Escolha a turma:</label>
+                <select name="cars" id="cars">
+                  <option value="IDEV1">IDEV1</option>
+                  <option value="IDEV2">IDEV2</option>
+                  <option value="IDEV3">IDEV3</option>
+                  <option value="IELEMEC1">IELEMEC1</option>
+                  <option value="IELEMEC2">IELEMEC2</option>
+                  <option value="IELEMEC3">IELEMEC3</option>
+                  <option value="OUTRO">OUTRO</option>
+                </select>
+              </div>
+
               <div className="h-5 input" >
                 
               </div>
