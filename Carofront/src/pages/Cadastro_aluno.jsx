@@ -4,6 +4,7 @@ import './Cadastro_aluno.css';
 function Cadastro_aluno() {
   const [imgtoinp, setImgtoinp] = useState('');
   const [inptoimg, setInptoimg] = useState('');
+  const campoObrigatorio = document.getElementById('obrigatorio')
    //declarar as variaveis
 
   function VoltarTurma() {
@@ -18,7 +19,12 @@ function Cadastro_aluno() {
   };
 
   function cadastro(){
+    if (campoObrigatorio.value != '') {
+      window.alert("usuario cadastrado com sucesso")
     window.location.href = "/home"
+  } else{
+    alert('Preencha todos os campos ')
+  }
   }
 
   return (
@@ -38,9 +44,9 @@ function Cadastro_aluno() {
           </div>
           <div className='flex justify-around'>
             <div className=' flex flex-col' id="leftside">
-              <input className="mb-10 h-11 input " type="text" placeholder='NOME' />
-              <input className="mb-10 h-11 input" type="text" placeholder='CPF' />
-              <input className="mb-10 h-11 input" type="text" placeholder='EMAIL' />
+              <input className="mb-10 h-11 input " type="text" placeholder='NOME' id='obrigatorio' />
+              <input className="mb-10 h-11 input" type="number" placeholder='CPF' id='obrigatorio number' />
+              <input className="mb-10 h-11 input" type="email" placeholder='EMAIL' id='obrigatorio' />
               <div className="h-5 input" >
                 
               </div>
@@ -51,8 +57,8 @@ function Cadastro_aluno() {
               </div>
             </div>
             <div className=' flex flex-col' id="rightside">
-              <input className=" mb-10 h-11 input" type="text" placeholder='NOME DO RESPONSAVEL' />
-              <input className=" mb-10 h-11 input" type="text" placeholder='TELEFONE' />
+              <input className=" mb-10 h-11 input" type="text" placeholder='NOME DO RESPONSAVEL' id='obrigatorio'/>
+              <input className=" mb-10 h-11 input" type="number" placeholder='TELEFONE' id='obrigatorio number' />
               <textarea name="" id=""  rows="10" className=' justify-center input' placeholder='COMETARIOS ADICIONAIS' class="textarea"></textarea> <br />
               <div className=' flex justify-center'>
               <button className=' cadastro' onClick={cadastro}>CADASTRE</button>
