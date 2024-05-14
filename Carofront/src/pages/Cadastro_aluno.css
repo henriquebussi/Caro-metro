@@ -8,8 +8,13 @@
   height: 50px; 
   font-size: 30px;
   background-color: #92A3FF;
+  transition-duration: 0.3s;
 }
 
+.cadastro:hover{
+  transform: translate(0, -5px);
+  background-color: #8496fc;
+}
 
 input[type="file"]{
   display: none;

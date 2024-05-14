@@ -4,7 +4,8 @@ import './Cadastro_aluno.css';
 function Cadastro_aluno() {
   const [imgtoinp, setImgtoinp] = useState('');
   const [inptoimg, setInptoimg] = useState('');
-   //declarar as variaveis
+  const [campoObrigatorio, setObrigatorio] = useState('');
+    //declarar as variaveis
 
   function VoltarTurma() {
     window.location.href = "/home";
@@ -18,7 +19,12 @@ function Cadastro_aluno() {
   };
 
   function cadastro(){
+    if (campoObrigatorio != '') {
+      window.alert("usuario cadastrado com sucesso")
     window.location.href = "/home"
+  } else{
+    alert('Preencha todos os campos ')
+  }
   }
 
   return (
@@ -38,22 +44,9 @@ function Cadastro_aluno() {
           </div>
           <div className='flex justify-around'>
             <div className=' flex flex-col' id="leftside">
-              <input className="mb-10 h-11 input " type="text" placeholder='NOME' />
-              <input className="mb-10 h-11 input" type="text" placeholder='CPF' />
-              <input className="mb-10 h-11 input" type="text" placeholder='EMAIL' />
-              <div id='dropdwon'>
-                <label for="cars">Escolha a turma:</label>
-                <select name="cars" id="cars">
-                  <option value="IDEV1">IDEV1</option>
-                  <option value="IDEV2">IDEV2</option>
-                  <option value="IDEV3">IDEV3</option>
-                  <option value="IELEMEC1">IELEMEC1</option>
-                  <option value="IELEMEC2">IELEMEC2</option>
-                  <option value="IELEMEC3">IELEMEC3</option>
-                  <option value="OUTRO">OUTRO</option>
-                </select>
-              </div>
-
+              <input className="mb-10 h-11 input " type="text" placeholder='NOME' id='obrigatorio'value={campoObrigatorio} onChange={(e) => setObrigatorio(e.target.value)} />
+              <input className="mb-10 h-11 input" type="number" placeholder='CPF' id='obrigatorio number' value={campoObrigatorio} onChange={(e) => setObrigatorio(e.target.value)}/>
+              <input className="mb-10 h-11 input" type="email" placeholder='EMAIL' id='obrigatorio' value={campoObrigatorio} onChange={(e) => setObrigatorio(e.target.value)} />
               <div className="h-5 input" >
                 
               </div>
@@ -64,8 +57,8 @@ function Cadastro_aluno() {
               </div>
             </div>
             <div className=' flex flex-col' id="rightside">
-              <input className=" mb-10 h-11 input" type="text" placeholder='NOME DO RESPONSAVEL' />
-              <input className=" mb-10 h-11 input" type="text" placeholder='TELEFONE' />
+              <input className=" mb-10 h-11 input" type="text" placeholder='NOME DO RESPONSAVEL' id='obrigatorio' value={campoObrigatorio} onChange={(e) => setObrigatorio(e.target.value)}/>
+              <input className=" mb-10 h-11 input" type="number" placeholder='TELEFONE' id='obrigatorio 'value={campoObrigatorio} onChange={(e) => setObrigatorio(e.target.value)} />
               <textarea name="" id=""  rows="10" className=' justify-center input' placeholder='COMETARIOS ADICIONAIS' class="textarea"></textarea> <br />
               <div className=' flex justify-center'>
               <button className=' cadastro' onClick={cadastro}>CADASTRE</button>
