@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './Topbar.css';
 
 function Topbar() {
+    
     const [dropdownVisivel, setDropdownVisivel] = useState(false);
     const [botaoTexto, setBotaoTexto] = useState("LISTA DE ALUNOS DO IDEV2");
     const [turma, setTurma] = useState("IDEV2")
     const [curso, setCurso] = useState("desenvolvimento de sistemas")
-
+    const image = useState("image")
 
     function Cadastrar() {
         window.location.href = "/cadastro-aluno"
@@ -17,6 +18,7 @@ function Topbar() {
 
     function toggleDropdown() {
         setDropdownVisivel(!dropdownVisivel);
+     
     }
 
     function handleClickOutside(event) {
@@ -48,14 +50,19 @@ function Topbar() {
         <div className=" text-black navbar1">
             <div className="dropdown">
                 <button onClick={toggleDropdown}>{botaoTexto}</button>
-                <div className={`alter ${dropdownVisivel ? 'show' : ''}`}>
+                <span className={`alter ${dropdownVisivel ? 'show' : ''}`}>
                     <a onClick={() => handleItemClick("IDEV1")}>IDEV1</a>
                     <a onClick={() => handleItemClick("IDEV2")}>IDEV2</a>
                     <a onClick={() => handleItemClick("IDEV3")}>IDEV3</a>
                     <a onClick={() => handleItemClick("ILE-MEC1")}>ILE-MEC1</a>
                     <a onClick={() => handleItemClick("ILE-MEC2")}>ILE-MEC2</a>
                     <a onClick={() => handleItemClick("ILE-MEC3")}>ILE-MEC3</a>
-                </div>
+                </span>
+                <span >
+                <img src="src\image\arrow-down-sign-to-navigate.png" alt="" id={`${dropdownVisivel ? 'img2' : 'img'}`}/>
+                </span>
+               
+                
 
             </div>
         </div>
