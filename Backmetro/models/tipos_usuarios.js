@@ -1,24 +1,18 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../config/sequelize");
 
-const Turmas = sequelize.define(
-    "Turmas", {
-        idTurmas: {
+const TipoUsuarios = sequelize.define(
+    "Tipos_Usuarios", {
+        idTipos_Usuarios: {
             type: Sequelize.INTEGER,
             primaryKey: true, // Define essa coluna como a chave primária
             autoIncrement: true, // Indica que é uma chave primaria autoincrementável
           },
-          codigo: Sequelize.STRING,
           descricao: Sequelize.STRING,
-          inicio: Sequelize.DATE,
-          fim: Sequelize.DATE,
-          fotos: Sequelize.STRING,
-
-
     },
     {
         timestamps: false, // Adiciona colunas createdAt e updatedAt automaticamente
       }
 )
 
-module.exports = Turmas;
+module.exports = TipoUsuarios;

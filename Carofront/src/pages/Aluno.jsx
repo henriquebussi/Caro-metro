@@ -15,14 +15,14 @@ function Aluno() {
       </div>
       <div className="info">
         <div className="container1">
-           <span className="nome informacao">Nome: Max Verstappen</span> {/*depois tera que mudar usando banco de dados */}
-            <span className="cpf informacao">CPF: 453.178.287-91</span>
-            <span className="email informacao">Email: Maxverstappin@Verstappen.com</span>
-            <span className="turma2 informacao">Turma: IDEV2 né vida</span>
-            <span className="responsavel informacao">Nome do responsável: Sophie-Marie Kumpen</span>
-            <span className="telefone informacao">Número: #1 lugar </span>
-            <span className="ocorrencias informacao">Ocorrencias: 2 por exesso de velocidade </span>
-            <span className="comentarios informacao">Comentários:enquanto tu ta indo ele ta vortano </span>
+           <span className="nome informacao">Nome: <input type="text" name="" id="" value="Max verstappen" /></span> {/*depois tera que mudar usando banco de dados */}
+            <span className="cpf informacao">CPF: <input type="text" name="" id="" value="Max verstappen" /> </span>
+            <span className="email informacao">Email: <input type="text" name="" id="" value="email@email.com" /> </span>
+            <span className="turma2 informacao">Turma: <input type="text" name="" id="" value="Idev2 né vida" /></span>
+            <span className="responsavel informacao">Nome do responsável: <input type="text" name="" id="" value="Max verstappen-mãe" /></span>
+            <span className="telefone informacao">Número: <input type="text" name="" id="" value="#1 lugar" /> </span>
+            <span className="ocorrencias informacao">Ocorrencias: <input type="text" name="" id="" value="2" /> </span>
+            <span className="comentarios informacao">Comentários:<input type="text" name="" id="" value="enquanto tu ta indo eu to vortano" /> </span>
         </div>
       </div>
       </div>
