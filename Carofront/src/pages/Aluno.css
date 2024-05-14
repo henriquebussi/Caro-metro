@@ -13,12 +13,10 @@ body{
     cursor: auto;
     border: 2px solid black;
     background-color: gray;
-    position: fixed;
 }   
 
 .centro{
     display: flex;
-    justify-content: end;
 }
 
 .container1{
@@ -43,4 +41,38 @@ input{
 
 .topbar{
     position: fixed;
+}
+
+@media (max-width: 768px){
+    input{
+        width: 20rem;
+    }
+    .informacao{
+        width: 27rem;
+    }
+    .maxPerfil{
+        width: 20rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 450px){
+    input{
+        width: 10rem;
+        height: 2rem;
+    }
+    .info{
+        margin-top: 12.5rem;
+        width: 30rem;
+    }
+    .informacao{
+        width: 15rem;
+    }
+    .maxPerfil{
+        position: absolute;
+        width: 10rem;
+        right: 30%;
+    }
+    .imageAluno{
+    }
 }

@@ -6,13 +6,14 @@ function Aluno() {
   return (
 
     <div class="body">
-      <TopbarAluno class="topbar"/>
+      <TopbarAluno/>
 
       <main>
-      <div className="imageAluno">
+
+    <div className="centro">
+    <div className="imageAluno">
         <img src="src\image\Max-Verstappen.png" alt="" class="maxPerfil"/>
       </div>
-    <div className="centro">
       <div className="info">
         <div className="container1">
            <span className="nome informacao">Nome: <br /><input type="text" name="" id="" value="Max verstappen" /></span> {/*depois tera que mudar usando banco de dados */}
