@@ -16,8 +16,7 @@
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    display: flex;
 }
 
 .dropdown button {
@@ -101,4 +100,20 @@ span{
 
 .logoSenai{
     width: 8rem;
+}
+
+#img{
+    transform: rotate(-90deg);
+    width: 2rem;
+    margin-left: 0.5rem;
+    transition-duration: 0.3s;
+    margin-top: 0.5rem;
+}
+
+#img2{
+    transform: rotate(0deg);
+    width: 2rem;
+    margin-left: 0.5rem;
+    transition-duration: 0.3s;
+    margin-top: 0.5rem;
 }
